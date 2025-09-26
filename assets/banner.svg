@@ -1,18 +1,54 @@
 <!-- assets/banner.svg -->
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-label="Ayush — Backend Engineer">
   <defs>
+    <!-- animated gradient for the name (starts after 4s and plays once) -->
     <linearGradient id="g" x1="0" x2="1">
-      <stop stop-color="#0f172a" offset="0"/>
-      <stop stop-color="#0ea5a4" offset="1"/>
+      <stop offset="0%" stop-color="#0f172a">
+        <animate attributeName="stop-color"
+                 values="#0f172a;#0ea5a4;#7c3aed;#0f172a"
+                 dur="6s"
+                 begin="4s"
+                 repeatCount="1" />
+      </stop>
+      <stop offset="100%" stop-color="#0ea5a4">
+        <animate attributeName="stop-color"
+                 values="#0ea5a4;#7c3aed;#ef4444;#0ea5a4"
+                 dur="6s"
+                 begin="4s"
+                 repeatCount="1" />
+      </stop>
+    </linearGradient>
+
+    <!-- subtle darker gradient for the subtitle (static) -->
+    <linearGradient id="sub" x1="0" x2="1">
+      <stop offset="0%" stop-color="#9aa8b2"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
     </linearGradient>
   </defs>
+
+  <!-- background -->
   <rect width="100%" height="100%" fill="#0b1220"/>
-  <g transform="translate(40,40)">
-    <text x="0" y="48" font-family="Inter, Arial" font-size="40" fill="url(#g)" font-weight="700">Ayush</text>
-    <text x="0" y="90" font-family="Inter, Arial" font-size="18" fill="#9aa8b2">Backend Engineer • API Design • Distributed Systems • DevOps</text>
+
+  <!-- floating group: anchored at (40,40) and animated to bob -->
+  <g id="floatGroup" transform="translate(40 40)">
+    <!-- gentle bob: translate Y between 40 -> 34 -> 40 -->
+    <animateTransform attributeName="transform"
+                      attributeType="XML"
+                      type="translate"
+                      values="40 40; 40 34; 40 40"
+                      dur="4s"
+                      repeatCount="indefinite"/>
+
+    <!-- main title -->
+    <text x="0" y="48" font-family="Inter, Arial, sans-serif" font-size="40" fill="url(#g)" font-weight="700">Ayush Kumar Dwivedi</text>
+
+    <!-- subtitle -->
+    <text x="0" y="90" font-family="Inter, Arial, sans-serif" font-size="18" fill="url(#sub)">Backend Engineer • API Design • Distributed Systems • DevOps</text>
+
+    <!-- right contact pill (kept static for readability) -->
     <g transform="translate(620,18)">
       <rect x="0" y="0" rx="8" ry="8" width="220" height="60" fill="#071325" stroke="#123848"/>
-      <text x="16" y="36" font-family="Inter, Arial" font-size="14" fill="#79ffe1">Open to: Backend / Infra roles</text>
+      <text x="16" y="36" font-family="Inter, Arial, sans-serif" font-size="14" fill="#79ffe1">Open to: Backend / Infra roles</text>
     </g>
   </g>
 </svg>
