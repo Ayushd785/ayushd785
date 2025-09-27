@@ -1,10 +1,16 @@
 <h1 align="center">
-  <!-- ASCII banner below -->
-<p align="center">
-  <img src="assets/banner.svg" alt="Ayush — Backend Engineer" />
-</p>
-
+  <!-- Banner -->
+  <p align="center">
+    <img src="assets/banner.svg" alt="Ayush — Backend Engineer" />
+  </p>
 </h1>
+
+<!-- Typing animation intro -->
+<p align="center">
+  <a href="https://github.com/ayushd785">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=4000&pause=1000&color=0EA5A4&center=true&vCenter=true&width=700&height=60&lines=Namaste+Everyone+🙏;Backend+Developer+⚡;API+Design+%7C+Distributed+Systems+%7C+DevOps;Always+learning+new+things+🚀" alt="Typing SVG" />
+  </a>
+</p>
 
 ---
 
@@ -25,7 +31,6 @@ I design and build backend systems and full-stack apps that are reliable, mainta
 
 ## 🛠 Languages & Tools
 <p align="left">
-  <!-- keep/remove icons you like -->
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="36" height="36"/> &nbsp;
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="36" height="36"/> &nbsp;
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="36" height="36"/> &nbsp;
