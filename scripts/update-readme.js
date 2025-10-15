@@ -93,7 +93,7 @@ function makeCalendarSVG(calendar) {
     week.contributionDays.forEach((day, di) => {
       const x = wi * (square + gap) + 20;
       const y = di * (square + gap) + 30;
-      let color = day.color || pickColorFromCount(day.contributionCount);
+      let color = pickColorFromCount(day.contributionCount);
       rects.push({ x, y, color, count: day.contributionCount, date: day.date });
     });
   });
@@ -174,7 +174,6 @@ async function main() {
             contributionDays {
               date
               contributionCount
-              color
             }
           }
         }
