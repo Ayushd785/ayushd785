@@ -12,13 +12,6 @@ if (!token) {
   process.exit(1);
 }
 
-// Compute last-year range
-const to = new Date();
-const from = new Date(to);
-from.setFullYear(to.getFullYear() - 1);
-const fromISO = from.toISOString();
-const toISO = to.toISOString();
-
 async function graphql(query, variables = {}) {
   const res = await fetch(GITHUB_GRAPHQL, {
     method: "POST",
@@ -160,16 +153,17 @@ function legendColor(i) {
 
 async function main() {
   const query = `
-  query($from: DateTime!, $to: DateTime!) {
+  query {
     viewer {
       login
       name
-      contributionsCollection(from: $from, to: $to) {
+      contributionsCollection {
         totalCommitContributions
         totalPullRequestContributions
         totalIssueContributions
         totalPullRequestReviewContributions
         contributionCalendar {
+          totalContributions
           weeks {
             contributionDays {
               date
@@ -181,8 +175,7 @@ async function main() {
     }
   }`;
 
-  const variables = { from: fromISO, to: toISO };
-  const data = await graphql(query, variables);
+  const data = await graphql(query);
   const col = data.viewer.contributionsCollection;
 
   const statsSvg = makeStatsSVG({
