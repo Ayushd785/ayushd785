@@ -43,7 +43,7 @@
     <text x="0" y="48" font-family="Inter, Arial, sans-serif" font-size="40" fill="url(#g)" font-weight="700">Ayush Kumar Dwivedi</text>
 
     <!-- subtitle -->
-    <text x="0" y="90" font-family="Inter, Arial, sans-serif" font-size="18" fill="url(#sub)">Backend Engineer • API Design • Distributed Systems • DevOps</text>
+    <text x="0" y="90" font-family="Inter, Arial, sans-serif" font-size="18" fill="url(#sub)">Backend Engineer • C/C++ • Distributed Systems • Reverse Engineering</text>
 
     <!-- right contact pill (kept static for readability) -->
     <g transform="translate(620,18)">
