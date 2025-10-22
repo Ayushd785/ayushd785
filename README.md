@@ -53,35 +53,6 @@ I design and build backend systems and full-stack apps that are reliable, mainta
 
 ---
 
-## 🚧 Projects
-> _I will add detailed project cards/links soon — placeholders below._
-
-- **PricePulse (placeholder)** — Real-time price alert system. (Go, Redis, Postgres)  
-- **FoodRunner-API (placeholder)** — Multi-tenant delivery backend. (Node.js, MongoDB)  
-- **MarketSense (placeholder)** — Data aggregator + sentiment engine. (Kafka, Airflow)
-
----
-
-## 📈 GitHub Stats
-
-<p align="left">
-  <!-- Top languages (keep as-is) -->
-  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs?username=ayushd785&layout=compact&theme=radical" />
-  &nbsp;
-  <!-- Main stats card (keep as-is) -->
-  <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=ayushd785&show_icons=true&locale=en&theme=radical&count_private=true" />
-</p>
-
-<p align="left">
-  <!-- Streak (keep if you want) -->
-  <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=ayushd785&theme=dark" />
-</p>
-
-<p align="left">
-  <!-- Contribution calendar (keep/replace) -->
-  <img alt="Contribution Graph" src="https://ghchart.rshah.org/ayushd785" />
-</p>
-
 <!-- INSERTED BY ACTION: stats & calendar -->
 <!-- STATS_START -->
 <!-- STATS_END -->
